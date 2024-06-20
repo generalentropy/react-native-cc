@@ -7,6 +7,8 @@ node_modules/
 .expo/
 dist/
 web-build/
+%ProgramData%/
+
 
 # Native
 *.orig.*
@@ -36,6 +38,9 @@ yarn-error.*
 
 # assets
 aora-main.zip
+
+
+
 
 # config
 # appwrite.js
