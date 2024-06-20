@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
-import { ScrollView, StyleSheet, Text, View, Image } from "react-native";
-import { Link } from "expo-router";
+import { ScrollView, Text, View, Image } from "react-native";
+import { Redirect, router } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { images } from "../constants";
@@ -10,7 +10,7 @@ export default function App() {
   return (
     <SafeAreaView className="h-full bg-primary">
       <ScrollView contentContainerStyle={{ height: "100%" }}>
-        <View className="h-full w-full items-center justify-center px-4">
+        <View className="min-h-[85vh] w-full items-center justify-center px-4">
           <Image
             source={images.logo}
             className="h-[84px] w-[130px]"
@@ -42,7 +42,7 @@ export default function App() {
 
           <CustomButton
             title="Continue with Email"
-            handlePress={() => {}}
+            handlePress={() => router.push("/sign-in")}
             containerStyles="w-full mt-7"
           />
         </View>
