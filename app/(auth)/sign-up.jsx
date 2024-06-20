@@ -74,6 +74,7 @@ const SignUp = () => {
             title="Sign Up"
             handlePress={handleSubmit}
             containerStyles={`mt-7`}
+            isLoading={isSubmitting}
           />
 
           <View className="flex-row justify-center gap-2 pt-5">

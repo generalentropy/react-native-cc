@@ -19,3 +19,11 @@ https://stackoverflow.com/questions/65972322/white-flickering-when-keyboard-pops
 ### haptic feedback
 
 https://stackoverflow.com/questions/76869414/how-to-add-haptic-feedback-vibrations-in-react-native-app
+
+### appwrite
+
+https://www.youtube.com/watch?v=pOqT7yczlj4
+
+### Creation of a session is prohibited when a session is active
+
+https://discord.com/channels/564160730845151244/1237659392124522546
