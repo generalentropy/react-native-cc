@@ -15,3 +15,7 @@ https://tailwindcss.com/blog/automatic-class-sorting-with-prettier
 https://stackoverflow.com/questions/46975401/keyboard-white-flickering-with-react-native
 
 https://stackoverflow.com/questions/65972322/white-flickering-when-keyboard-pops-up-in-my-react-native-app
+
+### haptic feedback
+
+https://stackoverflow.com/questions/76869414/how-to-add-haptic-feedback-vibrations-in-react-native-app

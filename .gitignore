@@ -36,3 +36,6 @@ yarn-error.*
 
 # assets
 aora-main.zip
+
+# config
+# appwrite.js
