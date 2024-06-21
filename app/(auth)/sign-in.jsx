@@ -23,7 +23,7 @@ const SignIn = () => {
     setIsSubmitting(true);
 
     try {
-      await account.deleteSessions();
+      // await account.deleteSessions();
       await signIn(form.email, form.password);
 
       // set it to global state...
