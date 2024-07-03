@@ -28,6 +28,7 @@ const SignIn = () => {
       await signIn(form.email, form.password);
       const result = await getCurrentUser();
 
+      console.log(result);
       // set it to global state
       setUser(result);
       setIsLoggedIn(true);
