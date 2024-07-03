@@ -5,22 +5,28 @@ import {
   Button,
   TouchableOpacity,
   Image,
+  Alert,
 } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import useAppwrite from "../../lib/useAppwrite";
-import { getUserPosts } from "../../lib/appwrite";
+import { getUserPosts, logout } from "../../lib/appwrite";
 import EmptyState from "../../components/EmptyState";
 import VideoCard from "../../components/VideoCards";
 import { useGlobalContext } from "../context/GlobalProvider";
 import { icons } from "../../constants";
 import InfoBox from "../../components/InfoBox";
+import { router } from "expo-router";
 const Profile = () => {
-  const { user } = useGlobalContext();
+  const { user, setUser, setIsLoggedIn } = useGlobalContext();
   const { data: posts } = useAppwrite(() => getUserPosts(user.$id));
 
-  const logout = () => {
-    console.log("dsd");
+  const handleLogout = async () => {
+    await logout();
+    setUser(null);
+    setIsLoggedIn(false);
+
+    router.replace("/sign-in");
   };
 
   return (
@@ -33,7 +39,7 @@ const Profile = () => {
           <View className="mb-12 mt-6 w-full items-center justify-center px-4">
             <TouchableOpacity
               className="mb-10 w-full items-end"
-              onPress={logout}
+              onPress={handleLogout}
             >
               <Image
                 source={icons.logout}

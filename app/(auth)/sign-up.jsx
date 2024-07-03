@@ -28,7 +28,6 @@ const SignUp = () => {
     try {
       const result = await createUser(form);
 
-      // set it to global state
       setUser(result);
       setIsLoggedIn(true);
 
