@@ -12,13 +12,15 @@ import { useGlobalContext } from "../context/GlobalProvider";
 
 const Home = () => {
   const { data: posts, refetch } = useAppwrite(getAllPosts);
-  const { data: latestPosts } = useAppwrite(getLatestPosts);
+  const { data: latestPosts, refetch: refetchLatestPosts } =
+    useAppwrite(getLatestPosts);
   const [refreshing, setRefreshing] = useState(false);
   const { user } = useGlobalContext();
 
   const onRefresh = async () => {
     setRefreshing(true);
     await refetch();
+    await refetchLatestPosts();
     setRefreshing(false);
   };
 
