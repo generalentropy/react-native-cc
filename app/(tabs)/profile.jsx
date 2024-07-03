@@ -1,12 +1,4 @@
-import {
-  View,
-  Text,
-  FlatList,
-  Button,
-  TouchableOpacity,
-  Image,
-  Alert,
-} from "react-native";
+import { View, FlatList, TouchableOpacity, Image } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import useAppwrite from "../../lib/useAppwrite";
