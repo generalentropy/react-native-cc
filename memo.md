@@ -1,3 +1,5 @@
+!!! https://docs.expo.dev/build-reference/variables/
+
 https://github.com/expo/expo/issues/3633
 
 https://docs.expo.dev/versions/latest/sdk/splash-screen/
