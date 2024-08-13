@@ -11,9 +11,9 @@
     <img src="https://img.shields.io/badge/NativeWind-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="nativewind" />
   </div>
 
+  </div>
 
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
+## <a align="left" name="tech-stack">⚙️ Tech Stack</a>
 
 - React Native
 - Expo
@@ -21,4 +21,3 @@
 - Animatable
 - Appwrite
 
-  </div>
